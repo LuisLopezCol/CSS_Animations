@@ -1,0 +1,186 @@
+:root {
+    --anim-time1: 100ms;
+    --anim-time2: 200ms;
+    --anim-time3: 300ms;
+    --anim-time4: 400ms;
+    --anim-time5: 500ms;
+    --anim-time6: 600ms;
+    --anim-time7: 700ms;
+    --anim-time8: 800ms;
+    --anim-time9: 900ms;
+    --anim-time10: 1000ms;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes translate_Right-Left {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes translate_Letf-Right {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes translate_Down-Up {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes translate_Up-Down {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes popup {
+    0% {
+        transform: scale(100%);
+    }
+
+    50% {
+        transform: scale(110%);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
+}
+
+@keyframes rotateX {
+    0% {
+        transform: rotateY(40deg);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
+}
+
+@keyframes rotateXreverse {
+    0% {
+        transform: rotateY(-40deg);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
+}
+
+/*-------------------- SHARED --------------------*/
+
+.A__translate__navElements--2 {
+    animation: translate_Down-Up var(--anim-time2) ease-in, popup var(--anim-time2) ease-in-out var(--anim-time2);
+}
+
+.A__translate__navElements--3 {
+    animation: translate_Down-Up var(--anim-time3) ease-in, popup var(--anim-time3) ease-in-out var(--anim-time3);
+}
+
+.A__translate__navElements--4 {
+    animation: translate_Down-Up var(--anim-time4) ease-in, popup var(--anim-time4) ease-in-out var(--anim-time4);
+}
+
+.A__translate__navElements--5 {
+    animation: translate_Down-Up var(--anim-time5) ease-in, popup var(--anim-time5) ease-in-out var(--anim-time5);
+}
+
+.A__translate__navElements--6 {
+    animation: translate_Down-Up var(--anim-time6) ease-in, popup var(--anim-time6) ease-in-out var(--anim-time6);
+}
+
+.A__translate__navElements--7 {
+    animation: translate_Down-Up var(--anim-time7) ease-in, popup var(--anim-time7) ease-in-out var(--anim-time7);
+}
+
+.A__translate__navElements--8 {
+    animation: translate_Down-Up var(--anim-time8) ease-in, popup var(--anim-time8) ease-in-out var(--anim-time8);
+}
+
+.A__fadeIn {
+    animation: fadeIn var(--anim-time10);
+}
+
+.A__translate__headercolor {
+    animation: translate_Up-Down var(--anim-time3) ease-in, popup var(--anim-time3) ease-in var(--anim-time3);
+}
+
+.A__translate__headerwhite {
+    animation: translate_Right-Left var(--anim-time3) ease-in, popup var(--anim-time3) ease-in var(--anim-time3);
+}
+
+.A__translate__headerlogo {
+    animation: translate_Right-Left var(--anim-time6) ease-in, popup var(--anim-time6) ease-in var(--anim-time6);
+}
+
+.A__translate__leftchart {
+    animation: translate_Letf-Right var(--anim-time5) ease-in, rotateXreverse var(--anim-time5) ease-in var(--anim-time5);
+}
+
+.A__translate__rightchart {
+    animation: translate_Right-Left var(--anim-time5) ease-in, rotateX var(--anim-time5) ease-in var(--anim-time5);
+}
+
+.A__translate__footer {
+    animation: translate_Down-Up var(--anim-time4) ease-in, popup var(--anim-time4) ease-in var(--anim-time4);
+}
+
+/*-------------------- HOME --------------------*/
+
+.A__translate__upperLogo {
+    animation: translate_Letf-Right var(--anim-time4) ease-in, popup var(--anim-time4) ease-in var(--anim-time4);
+}
+
+.A__translate__bottomLogo {
+    animation: translate_Right-Left var(--anim-time4) ease-in, popup var(--anim-time4) ease-in var(--anim-time4);
+}
+
+.A__translate__mainText {
+    animation: translate_Letf-Right var(--anim-time6) ease-in, rotateX var(--anim-time6) ease-in var(--anim-time6);
+}
+
+/*-------------------- EPIDEMIOLOGÍA --------------------*/
+
+.A__translate__header {
+    animation: translate_Up-Down var(--anim-time4) ease-in, popup var(--anim-time4) ease-in var(--anim-time4);
+
+}
+
+/*-------------------- DIÁGNOSTICO --------------------*/
+
+
+/*-------------------- ALGORITMO --------------------*/
+
+
+
+/*-------------------- HOME --------------------*/
+/*-------------------- HOME --------------------*/
+/*-------------------- HOME --------------------*/

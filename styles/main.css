@@ -1,0 +1,471 @@
+@font-face {
+    font-family: 'Merck-font';
+    src: url('/Fonts/Merck-font.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Verdana';
+    src: url('/Fonts/verdana.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Verdanab';
+    src: url('/Fonts/verdanab.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+:root {
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --mainMagenta: #EE3D96;
+    --mainPurple: #522583;
+    --mainGreen: #A5D7D5;
+    --mainSpacing: 0.1rem;
+    --mianTransition: 400ms ease-in;
+}
+
+/*------------ Shared styles ------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    width: 1024px;
+    height: 768px;
+    background-color: #ffffff;
+    background-image: url(../IMG/1Home/background.png);
+    background-size: 1024px 768px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+#header {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.header__bannertop-color {
+    position: absolute;
+    top: 0;
+    left: 145px;
+    width: 725px;
+    height: 140px;
+    background-image: url(/IMG/0Shared/header_bannercolor.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: visible;
+}
+
+.header__bannertop-white {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 295px;
+    height: 135px;
+    background-image: url(/IMG/0Shared/header_bannerwhite.svg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.header__bannertop--logo {
+    position: absolute;
+    top: 25px;
+    Right: 25px;
+    width: 140px;
+    height: auto;
+}
+
+#header h1 {
+    color: var(--mainWhite);
+    font-family: 'Merck-font';
+    padding-left: 105px;
+    font-size: 32px;
+}
+
+#navbar {
+    position: absolute;
+    background: transparent;
+    width: 98.5%;
+    height: 45px;
+    margin: 0;
+    padding: 0;
+    left: 1.5%;
+    bottom: 0%;
+}
+
+.navbar__elements {
+    margin: 0;
+    padding: 0;
+    height: 45px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    overflow: visible;
+    list-style-type: none;
+}
+
+.navbar__elements li {
+    height: 45px;
+    width: 95%;
+    padding: 0;
+    margin-left: 20px;
+    margin: 0;
+    overflow: none;
+    background-image: url(/IMG/0Shared/SVG/navbar_container.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 50%;
+}
+
+.navbar__elements li:hover {
+    transform: scale(120%);
+    opacity: 1;
+    transition: var(--mianTransition);
+    z-index: 4;
+}
+
+.navbar__element--on {
+    opacity: 1 !important;
+}
+
+.navbar__element__text {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 45px;
+    color: var(--mainWhite);
+    text-decoration: none;
+    font-size: 12.5px;
+    font-family: 'Merck-font';
+
+}
+
+.navbar__element--shown {
+    width: 95%;
+    padding: 0;
+    margin: 0;
+}
+
+/*------------ Home ------------*/
+
+#home {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Merck-font';
+    color: var(--mainWhite);
+}
+
+.home__title {
+    font-size: 60px;
+    margin: 0 0 0 50px
+}
+
+.home__subtitle {
+    font-size: 40px;
+    margin: 0 0 0 105px;
+    line-height: 15px;
+    color: var(--mainMagenta);
+}
+
+.home__bannertop--logo {
+    width: 212px;
+    height: 128px;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.home__bannertop--magenta {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 370px;
+    height: 200px;
+    background-image: url(/IMG/1Home/home_top_magenta.svg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 6;
+}
+
+.home__bannertop--purple {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 394px;
+    height: 223px;
+    background-image: url(/IMG/1Home/home_top_purple.svg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 4;
+}
+
+.home__bannerbottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 394px;
+    height: 223px;
+    background-image: url(/IMG/1Home/home_bannerbottom.svg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.home__bannerbottom--logo {
+    width: 195px;
+    height: 75px;
+    margin-top: 90px;
+    margin-left: 140px;
+}
+
+/*------------ Epidemiología ------------*/
+
+#epidem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1024px;
+    height: 768px;
+    overflow: hidden;
+    background-image: url(/IMG/2Epidem/backgroundepidem.png);
+    background-position: top left;
+    background-size: 1024px 768px;
+    background-repeat: no-repeat;
+    z-index: 5;
+}
+
+#epidem__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1024px;
+    height: 768px;
+}
+
+.epidem__content__header {
+    position: absolute;
+    top: 160px;
+    left: 240px;
+    z-index: 10;
+    width: 575px;
+}
+
+.epidem__content__footer {
+    position: absolute;
+    bottom: 55px;
+    left: 290px;
+    z-index: 10;
+    width: 465px;
+}
+
+.epidem__content__rightchart {
+    position: absolute;
+    top: 330px;
+    right: 25px;
+    z-index: 10;
+    width: 455px;
+}
+
+.epidem__content__rightheader {
+    position: absolute;
+    top: 265px;
+    left: 545px;
+    width: 455px;
+    z-index: 10;
+    margin: 0;
+    font-family: 'Merck-font';
+    color: var(--mainPurple);
+    line-height: 16px;
+}
+
+.epidem__content__leftchart {
+    position: absolute;
+    top: 250px;
+    left: 235px;
+    width: 250px;
+    z-index: 10;
+    margin: 0;
+    font-family: 'Merck-font';
+    text-align: center;
+}
+
+.epidem__content__leftchart h5 {
+    position: absolute;
+    top: 60px;
+    left: 41px;
+    color: var(--mainGreen);
+    line-height: 22px;
+    font-size: 20px;
+}
+
+.epidem__content__leftchart h4 {
+    position: absolute;
+    top: 168px;
+    left: 110px;
+    color: var(--mainWhite);
+    line-height: 22px;
+    font-size: 22px;
+    width: fit-content;
+}
+
+/*------------ Diágnostico ------------*/
+
+#diagnos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1024px;
+    height: 768px;
+    overflow: hidden;
+    background-image: url(/IMG/3Diagno/backgrounddiagnostico.png);
+    background-position: top left;
+    background-size: 1024px 768px;
+    background-repeat: no-repeat;
+    z-index: 5;
+    font-family: 'Merck-font';
+    color: var(--mainPurple);
+}
+
+#diagnos__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1024px;
+    height: 768px;
+}
+
+.diagnos__content__header h2 {
+    position: absolute;
+    top: 143px;
+    left: 420px;
+    width: 500px;
+    margin: 0;
+    font-size: 30px;
+}
+
+.diagnos__content__header img {
+    position: absolute;
+    top: 200px;
+    left: 420px;
+    font-size: 35px;
+    width: 500px;
+}
+
+.diagnos__content__header h3 {
+    position: absolute;
+    top: 430px;
+    left: 610px;
+    margin: 0;
+    font-size: 24px;
+}
+
+.diagnos__content__leftchart {
+    position: absolute;
+    bottom: 160px;
+    left: 350px;
+    font-size: 35px;
+    width: 290px;
+}
+
+.diagnos__content__rightchart {
+    position: absolute;
+    bottom: 160px;
+    right: 50px;
+    font-size: 35px;
+    width: 290px;
+}
+
+.diagnos__content__footer {
+    position: absolute;
+    bottom: 80px;
+    left: 450px;
+    font-size: 35px;
+    width: 465px;
+}
+
+/*------------ Tratamiento ------------*/
+
+#tratamiento {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1024px;
+    height: 768px;
+    overflow: hidden;
+    background-image: url(/IMG/4Tratamiento/backgroundTratamiento.svg);
+    background-position: top left;
+    background-size: 1024px 768px;
+    background-repeat: no-repeat;
+    z-index: 5;
+    font-family: 'Merck-font';
+    color: var(--mainWhite);
+}
+
+#tratamiento__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1024px;
+    height: 768px;
+}
+
+.tratamiento__content__mainchart {
+    position: absolute;
+    top: 150px;
+    width: 820px;
+    left: 100px;
+}
+
+.tratamiento__content__footer {
+    position: absolute;
+    bottom: 54px;
+    left: 210px;
+    width: 590px;
+}
+
+.tratamiento__content__next {
+    position: absolute;
+    top: 5px;
+    left: 75px;
+    width: 55px;
+}
+
+.tratamiento__content__title {
+    position: absolute;
+    top: 144px;
+    left: 245px;
+    font-size: 12.5px;
+    line-height: 20px;
+    text-align: center;
+    z-index: 10;
+    margin: 12px;
+    width: 540px;
+}
+
+#header__tratamiento h1 {
+    color: var(--mainWhite);
+    font-family: 'Merck-font';
+    padding-left: 105px;
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0;
+}
