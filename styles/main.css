@@ -469,3 +469,75 @@ body {
     line-height: 40px;
     margin: 0;
 }
+
+/*------------ Beneficios ------------*/
+
+#beneficios {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1024px;
+    height: 768px;
+    overflow: hidden;
+    background-image: url(/IMG/5Beneficios/Asset\ 2.png);
+    background-position: top left;
+    background-size: 1024px 768px;
+    background-repeat: no-repeat;
+    z-index: 5;
+    font-family: 'Merck-font';
+    color: var(--mainWhite);
+}
+
+#beneficios__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1024px;
+    height: 768px;
+    font-family: 'Merck-font';
+}
+
+#beneficios__content h4 {
+    position: absolute;
+    top: 185px;
+    left: 635px;
+    width: 330px;
+    color: var(--mainMagenta);
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+}
+
+#beneficios__content h3 {
+    position: absolute;
+    top: 245px;
+    left: 635px;
+    width: 330px;
+    color: var(--mainPurple);
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+}
+
+.beneficios__content__rightchart {
+    position: absolute;
+    top: 315px;
+    left: 635px;
+    width: 330px;
+}
+
+.beneficios__content__footer {
+    position: absolute;
+    top: 645px;
+    left: 315px;
+    width: 465px;
+
+}
+
+.beneficios__content__leftchart {
+    position: absolute;
+    top: 165px;
+    left: 320px;
+    width: 295px;
+
+}
